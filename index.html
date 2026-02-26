@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aynur's Bakery | Özel Pasta Siparişi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-cake-candles"></i> Aynur's Bakery
+        </div>
+        <nav class="nav-links">
+            <a href="#home">Ana Sayfa</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">Hakkımızda</a>
+        </nav>
+        <div class="header-icons" style="display: flex; gap: 1.2rem; align-items: center;">
+            <a href="https://wa.me/905056891955" target="_blank" class="nav-social"
+                style="color: #25D366; font-size: 1.4rem; transition: var(--transition); text-decoration: none;"><i
+                    class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/aynurs_bakeryy/" target="_blank" class="nav-social"
+                style="color: var(--text-dark); font-size: 1.4rem; transition: var(--transition); text-decoration: none;"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <div class="cart-icon" id="cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-badge" id="cart-badge">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Anne Eli Değmiş Lezzetler</h1>
+            <p>Aynur Hanım'ın mutfağından, sevgiyle ve en doğal malzemelerle hazırlanan ev yapımı pastalar.</p>
+            <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-top: 1rem;">
+                <a href="#menu" class="btn-primary">Menüyü İncele</a>
+                <a href="https://wa.me/905056891955" target="_blank" class="btn-primary"
+                    style="background-color: #25D366; border-color: #25D366;"><i class="fa-brands fa-whatsapp"></i>
+                    WhatsApp'tan Yazın</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="section-title">
+            <h2>Özel Pastalarımız</h2>
+            <p>Her bir dilimde eşsiz bir lezzet yolculuğu</p>
+        </div>
+
+        <div class="menu-grid" id="product-list">
+            <!-- Products will be injected by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="section-title">
+            <h2>İlham Kaynağı Pastalarımız</h2>
+            <p>Sizin için hazırladığımız özel tasarımlardan bazıları</p>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="assets/gallery_1.png" alt="Doğum Günü Pastası"></div>
+            <div class="gallery-item"><img src="assets/gallery_2.png" alt="Özel Tasarım Pasta"></div>
+            <div class="gallery-item"><img src="assets/hero_1.png" alt="Pastane Görünümü 1"></div>
+            <div class="gallery-item"><img src="assets/hero_2.png" alt="Pastane Görünümü 2"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>Aynur's Bakery Hakkında</h2>
+                <p>Aynur Hanım'ın yıllara meydan okuyan tarifleri, şimdi kendi evinin mutfağından sizlerin sofralarına
+                    ulaşıyor. Seri üretimden uzak, her bir pastaya ayrı bir özen ve sevgi katılarak hazırlanan
+                    ürünlerimiz; katkı maddesi içermeyen tamamen doğal malzemelerle, çocuklarınıza bile gönül
+                    rahatlığıyla yedirebileceğiniz bir ev sıcaklığı sunuyor.</p>
+                <div class="features">
+                    <div class="feature"><i class="fa-solid fa-house"></i> Ev Yapımı</div>
+                    <div class="feature"><i class="fa-solid fa-leaf"></i> Doğal Malzemeler</div>
+                    <div class="feature"><i class="fa-solid fa-heart"></i> Anne Sevgisi</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="section-title" style="margin-bottom: 2rem;">
+            <h2>Sıkça Sorulan Sorular</h2>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question">Siparişi kaç gün önceden vermeliyim? <i
+                        class="fa-solid fa-chevron-down"></i></button>
+                <div class="faq-answer">
+                    <p>Pastalarımız tamamen size özel ve taze hazırlandığı için siparişlerinizi teslimat tarihinden en
+                        az 3-4 gün önce oluşturmanızı rica ederiz.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Alerjen içerikler nelerdir? <i
+                        class="fa-solid fa-chevron-down"></i></button>
+                <div class="faq-answer">
+                    <p>Ürünlerimizde süt, yumurta, glüten ve kuruyemiş (fındık, fıstık vb.) bulunabilir. Özel
+                        alerjileriniz varsa sipariş esnasında lütfen belirtiniz.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Teslimat kendiniz mi yapıyorsunuz? <i
+                        class="fa-solid fa-chevron-down"></i></button>
+                <div class="faq-answer">
+                    <p>Evet, pastalarınızın zarar görmemesi için İstanbul içi teslimatlarımızı kendi özel kuryelerimizle
+                        güvenle gerçekleştiriyoruz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo"><i class="fa-solid fa-cake-candles"></i> Aynur's Bakery</div>
+            <p>Adres: İstanbul (Evden Teslim veya Gönderim)</p>
+            <p>Siparişlerinizi mesaj veya arama yoluyla iletebilirsiniz.</p>
+            <p>Tel: +90 505 689 19 55</p>
+            <div class="socials">
+                <a href="https://www.instagram.com/aynurs_bakeryy/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://wa.me/905056891955" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Aynur's Bakery. Tüm hakları saklıdır.
+        </div>
+    </footer>
+
+    <!-- Cart Overlay / Sidebar -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Sipariş Listem</h3>
+            <button class="close-cart" id="close-cart"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be injected here -->
+        </div>
+        <div class="cart-footer">
+            <button class="btn-checkout" id="btn-checkout" style="background-color: #25D366; color: white;"><i
+                    class="fa-brands fa-whatsapp"></i> WhatsApp ile Sipariş Ver</button>
+        </div>
+    </div>
+
+
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">Listeye eklendi!</div>
+
+    <!-- AI Chatbot Widget -->
+    <div class="chatbot-widget">
+        <button class="chatbot-toggle" id="chatbot-toggle">
+            <i class="fa-solid fa-robot"></i>
+        </button>
+        <div class="chatbot-window" id="chatbot-window">
+            <div class="chatbot-header">
+                <div class="chatbot-title"><i class="fa-solid fa-robot"></i> Aynur AI Asistan</div>
+                <button class="close-chatbot" id="close-chatbot"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="chatbot-messages" id="chatbot-messages">
+                <div class="bot-message">Merhaba! Ben Aynur AI Asistan. Size pasta seçiminizde veya sipariş sürecinde
+                    nasıl yardımcı olabilirim?</div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="chatbot-input-text" placeholder="Bir soru sorun...">
+                <button id="chatbot-send"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
